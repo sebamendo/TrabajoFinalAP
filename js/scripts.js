@@ -127,3 +127,13 @@ function generatePDF() {
   doc.save('formulario.pdf');
 }
 */
+
+/* VALIDACION DE SOLO STRING EN EL FOMRMULARIO */
+
+const nameInput = document.getElementById('name');
+
+nameInput.addEventListener('input', () => {
+  const regex = /[^a-zA-Z]/g;
+  nameInput.value = nameInput.value.replace(regex, '');
+});
+
