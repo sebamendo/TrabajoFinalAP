@@ -47,9 +47,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
 /*  COTIZA TU AUTO */
 
-
-
-
 class Producto {
   constructor(id, marca, modelo, año, precio, categoria, imagen) {
     this.id = id;
@@ -106,7 +103,7 @@ function filtrarProductos() {
 }
 
 /* Generador de PDF */
-
+/*
 function generatePDF() {
   // Obtén los datos del formulario
   var nombre = document.getElementById('name').value;
@@ -129,3 +126,4 @@ function generatePDF() {
   // Guarda el PDF como archivo para descarga
   doc.save('formulario.pdf');
 }
+*/
